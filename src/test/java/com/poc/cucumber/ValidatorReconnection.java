@@ -1,4 +1,4 @@
-package com.poc.cucumbergerkin;
+package com.poc.cucumber;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

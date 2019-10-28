@@ -1,4 +1,4 @@
-package com.poc.cucumbergerkin;
+package com.poc.cucumber;
 
 import static junit.framework.TestCase.assertTrue;
 
