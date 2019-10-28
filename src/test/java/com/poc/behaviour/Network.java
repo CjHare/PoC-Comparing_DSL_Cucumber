@@ -38,21 +38,6 @@ public class Network {
     proposer = nodes.iterator();
   }
 
-  public void passingValidation() {
-  }
-
-  public void failedValidation() {
-    throw new RuntimeException("Failure!");
-  }
-
-  public int getIntValue() {
-    return 5;
-  }
-
-  public Object getObject() {
-    return 6;
-  }
-
   public void sync() {
     for (final Node node : nodes) {
       node.sync(chainHeight);
@@ -68,4 +53,6 @@ public class Network {
 
     return proposer.next();
   }
+
+  public int size(){return nodes.size();}
 }
