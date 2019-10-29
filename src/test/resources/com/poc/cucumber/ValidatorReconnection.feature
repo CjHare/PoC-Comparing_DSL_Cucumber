@@ -6,4 +6,4 @@ Feature: ValidationReconnection
     And chain height increase after disconnection
     When validator reconnects
     And validator syncs to latest chain height
-    Then validator must be the proposer of a block within five blocks
+    Then validator takes turn proposing

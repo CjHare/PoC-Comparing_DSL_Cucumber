@@ -9,7 +9,7 @@ import java.util.List;
 
 public class NetworkAsserts {
 
-  public static void assertProposesWithinProposalRound(final Node expectedProposer,
+  public static void assertProposerTakesTurnProposing(final Node expectedProposer,
       final Network network) {
     final List<Node> proposers = new ArrayList<>(network.size());
 

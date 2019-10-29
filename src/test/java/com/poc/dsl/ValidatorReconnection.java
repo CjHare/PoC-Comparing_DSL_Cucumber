@@ -1,6 +1,6 @@
 package com.poc.dsl;
 
-import static com.poc.dsl.NetworkAsserts.assertProposesWithinProposalRound;
+import static com.poc.dsl.NetworkAsserts.assertProposerTakesTurnProposing;
 
 import com.poc.behaviour.Network;
 import com.poc.behaviour.Node;
@@ -28,7 +28,7 @@ public class ValidatorReconnection {
 
     network.sync();
 
-    assertProposesWithinProposalRound(bouncingValidator, network);
+    assertProposerTakesTurnProposing(bouncingValidator, network);
   }
 }
 

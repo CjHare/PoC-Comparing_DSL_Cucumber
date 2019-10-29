@@ -42,7 +42,7 @@ public class StepDefinitions {
     network.sync();
   }
 
-  @Then("validator must be the proposer of a block within five blocks")
+  @Then("validator takes turn proposing")
   public void validator_must_be_the_proposer_of_a_block_within_five_blocks() {
     final List<Node> proposers = new ArrayList<>(5);
 
