@@ -1,6 +1,7 @@
 package com.poc.dsl;
 
-import static junit.framework.TestCase.assertTrue;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.poc.behaviour.Network;
 import com.poc.behaviour.Node;
@@ -17,8 +18,7 @@ public class NetworkAsserts {
       proposers.add(network.mineBlock());
     }
 
-    assertTrue(String
-            .format("Did not find the validator being a proposer within %d blocks", network.size()),
-        proposers.contains(expectedProposer));
+    assertTrue(proposers.contains(expectedProposer), String
+        .format("Did not find the validator being a proposer within %d blocks", network.size()));
   }
 }
