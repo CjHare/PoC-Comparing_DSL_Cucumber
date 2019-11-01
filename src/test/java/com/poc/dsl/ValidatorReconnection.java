@@ -19,7 +19,7 @@ public class ValidatorReconnection {
   }
 
   @Test
-  public void mustSyncThenProposeBlock_afterDisconnection_whenHasProgressed() {
+  public void mustProposeBlockInTurn_afterDisconnection_thenReconnectionAndSync() {
     network.disconnect(bouncingValidator);
 
     network.mineBlock();
