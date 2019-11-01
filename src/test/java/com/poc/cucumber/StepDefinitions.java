@@ -1,5 +1,6 @@
 package com.poc.cucumber;
 
+import static com.poc.behaviour.NetworkAsserts.assertProposerTakesTurnProposing;
 import static junit.framework.TestCase.assertTrue;
 
 import com.poc.behaviour.Network;
@@ -43,14 +44,7 @@ public class StepDefinitions {
   }
 
   @Then("validator takes turn proposing")
-  public void validator_must_be_the_proposer_of_a_block_within_five_blocks() {
-    final List<Node> proposers = new ArrayList<>(5);
-
-    for (int i = 0; i < 5; i++) {
-      proposers.add(network.mineBlock());
-    }
-
-    assertTrue("Did not find the validator being bounced within five mined blocks",
-        proposers.contains(bouncingValidator));
+  public void validator_must_take_turn_proposing() {
+    assertProposerTakesTurnProposing(bouncingValidator, network);
   }
 }

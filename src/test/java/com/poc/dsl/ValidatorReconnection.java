@@ -1,6 +1,6 @@
 package com.poc.dsl;
 
-import static com.poc.dsl.NetworkAsserts.assertProposerTakesTurnProposing;
+import static com.poc.behaviour.NetworkAsserts.assertProposerTakesTurnProposing;
 
 import com.poc.behaviour.Network;
 import com.poc.behaviour.Node;

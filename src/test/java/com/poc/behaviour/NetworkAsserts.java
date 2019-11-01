@@ -1,4 +1,4 @@
-package com.poc.dsl;
+package com.poc.behaviour;
 
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
